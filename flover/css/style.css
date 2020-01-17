@@ -93,3 +93,8 @@ p{
 .btn-tour:hover{
     color: white;
 }
+
+.btn-tour i{
+    color: #129CF3;
+    font-size: 20px;
+}
