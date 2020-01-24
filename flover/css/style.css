@@ -484,7 +484,7 @@ p {
 
 /* contact us */
 
-.contact-us-form .form-control{
+.contact-us-form .form-control {
   display: block;
   width: 100%;
   height: 50px;
@@ -501,7 +501,7 @@ p {
   transition: all 1s;
 }
 
-#message{
+#message {
   height: 117px;
   resize: none;
 }
@@ -509,7 +509,7 @@ p {
 .submit-btn,
 .submit-btn:active,
 .submit-btn:focus,
-.submit-btn:visited{
+.submit-btn:visited {
   background-color: transparent;
   border: 1px solid #129cf3;
   border-radius: 4px;
@@ -521,30 +521,30 @@ p {
   transition: all 1s;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
   background-color: #129cf3;
   color: white;
   border-color: #129cf3;
 }
 
-.social-icons{
+.social-icons {
   padding-top: 50px;
   padding-bottom: 70px;
 }
 
-.social-icons ul{
+.social-icons ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.social-icons ul li{
+.social-icons ul li {
   list-style: none;
   display: inline;
   padding-left: 10px;
 }
 
-.social-icons ul li a{
+.social-icons ul li a {
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -556,13 +556,52 @@ p {
   color: #9d9d9d;
 }
 
-.social-icons ul li a:hover{
+.social-icons ul li a:hover {
   background-color: #129cf3;
   border: 1px solid #129cf3;
   color: #fff;
   transition: all 1s;
 }
 
-.social-icons ul li a i{
+.social-icons ul li a i {
   font-size: 20px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #1a1a1a;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  border-bottom: 3px solid #129cf3;
+}
+
+#copyrigth {
+  width: 50%;
+}
+
+#copyrigth p {
+  color: #8c8bba;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#copyrigth p a {
+  text-decoration: none;
+  color: #129cf3;
+}
+
+.scroll-top {
+  text-align: right;
+}
+
+.scroll-top a{
+  background-color: #129cf3;
+  padding: 25px;
+}
+
+.scroll-top a i{
+  color: white;
+  font-size: 25px;
 }
