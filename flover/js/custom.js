@@ -132,3 +132,14 @@ $(document).ready(function(){
     });
   }, 10);
 });
+
+$(document).ready(function(){
+  "use strict";
+  $(".bxslider").bxSlider({
+    slideWidth: 292.5,
+    auto: true,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin: 50
+  });
+});
