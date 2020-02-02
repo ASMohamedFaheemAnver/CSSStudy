@@ -143,3 +143,10 @@ $(document).ready(function(){
     slideMargin: 50
   });
 });
+
+$(document).ready(function(){
+  $(".counter-num").counterUp({
+    delay: 10,
+    time: 1000
+  });
+});
