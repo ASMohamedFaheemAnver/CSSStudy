@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float & Align</title>
+    <style>
+        *{
+            box-sizing: border-box;    
+        }
+
+        .container{
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .clr{
+            clear: both;
+        }
+
+        .box{
+            background-color: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        #box2{
+            float: left;
+            width: 68%;
+        }
+        
+        #box3{
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem temporibus accusamus debitis aliquam
+                corrupti quis possimus, culpa unde reiciendis provident magni vel aspernatur itaque laboriosam quo
+                exercitationem? Labore, non.</p>
+        </div>
+
+        <div id="box2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem temporibus accusamus debitis aliquam
+                corrupti quis possimus, culpa unde reiciendis provident magni vel aspernatur itaque laboriosam quo
+                exercitationem? Labore, non.</p>
+        </div>
+
+        <div id="box3" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem temporibus accusamus debitis aliquam
+                corrupti quis possimus, culpa unde reiciendis provident magni vel aspernatur itaque laboriosam quo
+                exercitationem? Labore, non.</p>
+        </div>
+
+        <div class="clr"></div>
+
+        <div id="box4" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem temporibus accusamus debitis aliquam
+                corrupti quis possimus, culpa unde reiciendis provident magni vel aspernatur itaque laboriosam quo
+                exercitationem? Labore, non.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
