@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+#navbar ul {
+  padding-bottom: 10px;
+}
+
 #navbar ul,
 #navbar ul li {
   float: none;
