@@ -31,7 +31,7 @@
         cum expedita enim corporis repudiandae. Voluptate dolorem odio delectus!
       </p>
       <div>
-        <a href="#page-1" class="btn"
+        <a href="#page-1" class="btn btn-dark"
           >Prev page <i class="fas fa-arrow-circle-up"></i
         ></a>
         <a href="#page-3" class="btn"
@@ -48,7 +48,7 @@
         cum expedita enim corporis repudiandae. Voluptate dolorem odio delectus!
       </p>
       <div>
-        <a href="#page-2" class="btn"
+        <a href="#page-2" class="btn btn-dark"
           >Prev page <i class="fas fa-arrow-circle-up"></i
         ></a>
         <a href="#page-4" class="btn"
@@ -65,10 +65,26 @@
         cum expedita enim corporis repudiandae. Voluptate dolorem odio delectus!
       </p>
       <div>
-        <a href="#page-3" class="btn"
+        <a href="#page-3" class="btn btn-dark"
           >Prev page <i class="fas fa-arrow-circle-up"></i
         ></a>
       </div>
     </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(".btn").on("click", function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate({ scrollTop: $(hash).offset().top }, 800);
+        }
+      });
+    </script>
   </body>
 </html>
