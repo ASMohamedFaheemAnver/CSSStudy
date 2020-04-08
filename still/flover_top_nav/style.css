@@ -67,10 +67,43 @@ nav > .right > ul > li > button:hover {
     border-bottom: solid 1px black;
   }
 
+  nav .left ul {
+    width: 100%;
+    display: block;
+  }
+
+  nav .left ul li {
+    width: 100%;
+  }
+
+  nav .left ul li a {
+    text-align: center;
+    width: 100%;
+  }
+
   nav .right {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  nav .right ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav .right ul li {
+    width: 100%;
+    flex: 1;
+  }
+
+  nav .right ul li a {
+    width: 100%;
+  }
+  nav .right ul li button {
+    width: 100%;
   }
 }
 
