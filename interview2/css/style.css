@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(139, 69, 19, 0.7);
+}
+
+nav .nav-left {
+  flex: 2;
+}
+
+nav .nav-left img {
+  width: 100px;
+}
+
+nav .nav-right {
+  flex: 1;
+}
+
+nav .nav-right ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wrapper .home {
+  font-size: 28px;
+  margin: 20%;
+}
+
+.websites {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.websites .website-contents {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.websites .website-contents .item {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.websites h1 {
+  font-size: 38px;
+}
+
+.websites .website-contents .item h2 {
+  margin-bottom: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.about h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .wrapper .home {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  nav .nav-right {
+    margin-top: 20px;
+  }
+
+  nav .nav-right ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav .nav-right ul li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media (max-height: 768px) {
+  .wrapper .home {
+    margin-top: 200px;
+    font-size: 20px;
+  }
+}
