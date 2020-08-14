@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2rem;
+}
+
+.card {
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.under-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.under-line {
+  width: 25%;
+  border-bottom: 1px solid blue;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#pop-up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#pop-up .card2 {
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#pop-up .card2 p {
+  margin: 10px 40px;
+}
+
+#pop-up .card2 img {
+  width: 100%;
+}
+
+.closer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.closer span {
+  padding: 10px;
+  border: 1px solid;
+}
+
+.closer span:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.action button {
+  padding: 5px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
