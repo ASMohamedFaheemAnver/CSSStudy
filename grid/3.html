@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1rem;
+        /*default is stretch */
+        /* justify-items: center; */
+        /*default is stretch */
+        /* align-items: center; */
+      }
+
+      .wrapper > div {
+        background: #eee;
+        padding: 1rem;
+      }
+
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+
+      /* .box1 {
+        align-self: stretch;
+        justify-self: stretch;
+      }
+
+      .box2 {
+        justify-self: stretch;
+      } */
+
+      /* .box1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+      } */
+
+      .box1 {
+        grid-row: 1/3;
+      }
+
+      .box2 {
+        grid-row: 1/3;
+        grid-column: 2/3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box box1">Box1</div>
+      <div class="box box2">Box2</div>
+      <div class="box box3">Box3</div>
+      <div class="box box4">Box4</div>
+    </div>
+  </body>
+</html>
